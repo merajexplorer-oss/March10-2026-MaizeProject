@@ -74,12 +74,24 @@
     // --- DEFINE AR FILES FOR EACH STAGE ---
     const stageModels = {
       "Stage 1": {
-        glb: "https://raw.githubusercontent.com/merajexplorer-oss/Oct11-2025_ARCustom/refs/heads/main/TextStandy.glb",
-        usdz: "https://raw.githubusercontent.com/merajexplorer-oss/Oct11-2025_ARCustom/refs/heads/main/Cartoon_Bird.usdz"
+        glb: "https://raw.githubusercontent.com/merajexplorer-oss/March10-2026-MaizeProject-AR3dModels/refs/heads/main/Stage1.glb",
+        usdz: "https://raw.githubusercontent.com/merajexplorer-oss/March10-2026-MaizeProject-AR3dModels/refs/heads/main/Cartoon_Bird.usdz"
       },
       "Stage 2": {
-        glb: "https://raw.githubusercontent.com/merajexplorer-oss/Oct11-2025_ARCustom/refs/heads/main/cartoon_bird.glb",
-        usdz: "https://raw.githubusercontent.com/merajexplorer-oss/Oct11-2025_ARCustom/refs/heads/main/Cartoon_Bird.usdz"
+        glb: "https://raw.githubusercontent.com/merajexplorer-oss/March10-2026-MaizeProject-AR3dModels/refs/heads/main/Stage2.glb",
+        usdz: "https://raw.githubusercontent.com/merajexplorer-oss/March10-2026-MaizeProject-AR3dModels/refs/heads/main/Cartoon_Bird.usdz"
+      },
+      "Stage 3": {
+        glb: "https://raw.githubusercontent.com/merajexplorer-oss/March10-2026-MaizeProject-AR3dModels/refs/heads/main/Stage3.glb",
+        usdz: "https://raw.githubusercontent.com/merajexplorer-oss/March10-2026-MaizeProject-AR3dModels/refs/heads/main/Cartoon_Bird.usdz"
+      },
+      "Stage 4": {
+        glb: "https://raw.githubusercontent.com/merajexplorer-oss/March10-2026-MaizeProject-AR3dModels/refs/heads/main/Stage4.glb",
+        usdz: "https://raw.githubusercontent.com/merajexplorer-oss/March10-2026-MaizeProject-AR3dModels/refs/heads/main/Cartoon_Bird.usdz"
+      },
+      "Stage 5": {
+        glb: "https://raw.githubusercontent.com/merajexplorer-oss/March10-2026-MaizeProject-AR3dModels/refs/heads/main/Stage5.glb",
+        usdz: "https://raw.githubusercontent.com/merajexplorer-oss/March10-2026-MaizeProject-AR3dModels/refs/heads/main/Cartoon_Bird.usdz"
       }
     };
 
@@ -89,9 +101,13 @@
       selectedModel = stageModels["Stage 1"];
     } else if (stage.includes("Stage 2")) {
       selectedModel = stageModels["Stage 2"];
-    } else {
-      selectedModel = stageModels["Stage 1"]; // default fallback
-    }
+    } else if (stage.includes("Stage 3")) {
+      selectedModel = stageModels["Stage 3"];
+    } else if (stage.includes("Stage 4")) {
+      selectedModel = stageModels["Stage 4"];
+    } else if (stage.includes("Stage 5")) {
+      selectedModel = stageModels["Stage 5"];
+    
 
     // --- CREATE INTENT URLS ---
     const androidIntentURL =
